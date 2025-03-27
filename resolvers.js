@@ -3,14 +3,14 @@ const posts = [
         id: 1,
         title: "Apprendre GraphQL",
         content: "This is my first post.",
-        author: 1
+        authorId: 1
 
     },
     {
         id: 2,
         title: "Apprendre Apollo",
         content: "This is my second post.",
-        author: 2
+        authorId: 2
     },
 ]
 
