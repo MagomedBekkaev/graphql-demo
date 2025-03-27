@@ -3,7 +3,15 @@ export const typeDefs = `#graphql
         id: ID!
         title: String!
         content: String!
+        author: Author
     },
+
+    type Author {
+        id: ID!
+        name: String!
+        email: String!
+        age: Int!
+    }
 
     type Query {
         getPosts: [Post]
@@ -11,6 +19,8 @@ export const typeDefs = `#graphql
     }
     type Mutation {
         addPost(title: String!, content: String!): Post
+        updatePost(id: ID!, title: String, content: String): Post
+        deletePost(id: ID!): Post
     }
 
     `
